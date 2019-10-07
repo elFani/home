@@ -1,0 +1,123 @@
+<div class="grid-3-column layout-two">
+  <div class="column column-context bg-dark text-white py-3">
+      <p>{{layoutTwoProperty}}</p>
+    <div class="form-group px-2">
+      <input type="text" placeholder="search" class="form-control">
+    </div>
+    <div class="list-group list-group-flush list-group-context-menu">
+      
+      <a class="list-group-item list-group-item-action pl-2" (click)="kingTriton = !kingTriton"><fa name="caret-right" *ngIf="kingTriton"></fa><fa name="caret-down" *ngIf="!kingTriton"></fa>King T. Triton</a>
+	      <div [collapse]="kingTriton" class="list-group list-group-context-menu context-menu-details">
+	        <a class="list-group-item list-group-item-action">Transcript</a>
+	        <a class="list-group-item list-group-item-action">Schedule</a>
+	        <a class="list-group-item list-group-item-action">Time to Degree</a>
+	        <a class="list-group-item list-group-item-action">DDA</a>
+	        <a class="list-group-item list-group-item-action">Attachments</a>
+	        <a class="list-group-item list-group-item-action">Referrals</a>
+	      </div>
+     
+      <a class="list-group-item list-group-item-action pl-2" (click)="ethylBromide = !ethylBromide"><fa name="caret-right" *ngIf="ethylBromide"></fa><fa name="caret-down" *ngIf="!ethylBromide"></fa>Ethyl Bromide</a>
+	      <div [collapse]="ethylBromide" class="list-group list-group-context-menu context-menu-details">
+	        <a class="list-group-item list-group-item-action">Transcript</a>
+	        <a class="list-group-item list-group-item-action">Schedule</a>
+	        <a class="list-group-item list-group-item-action">Time to Degree</a>
+	      </div>
+      <a class="list-group-item list-group-item-action pl-2">Happy Error</a>
+      <a class="list-group-item list-group-item-action pl-2">VAC User</a>
+      
+    </div>
+  </div>
+  <div class="column column-main">
+    <div class="profile-head bg-light px-3 py-2">
+      <div class="d-flex mb-2">
+        <div class="mr-2">
+          <img src="https://placehold.it/50x50" alt="name" class="rounded">
+        </div>
+        <div class="align-self-end">
+          <h2 class="profile-name mx-2 mb-0">King T. Triton</h2>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="major pr-2 small">
+          <div class="text-muted font-weight-bold">Major</div>
+          <div>Oceanography (CODE)</div>
+          <div>Marine Biology (CODE)</div>
+        </div>
+        <div class="minor px-2 small">
+          <div class="text-muted font-weight-bold">Minor</div>
+          <div>Basket Weaving (CODE)</div>
+        </div>
+      </div>
+    </div>
+    <div class="card border-0">
+      <div class="card-header border-0">
+        Academic Details
+      </div>
+      <div class="card-body">
+        <dl>
+          <dt class="text-muted small font-weight-bold">Cumulative GPA</dt>
+          <dd>3.9</dd>
+          <dt class="text-muted small font-weight-bold">Quarter GPA</dt>
+          <dd>4.0</dd>
+          <dt class="text-muted small font-weight-bold">Cumulative Units</dt>
+          <dd>140.0</dd>
+          <dt class="text-muted small font-weight-bold">Apply Type</dt>
+          <dd>NFRS</dd>
+          <dt class="text-muted small font-weight-bold">Enter Quarter</dt>
+          <dd>FA64</dd>
+          <dt class="text-muted small font-weight-bold">College</dt>
+          <dd>Revelle</dd>
+          <dt class="text-muted small font-weight-bold">ELWR</dt>
+          <dd>NO (icon)</dd>
+          <dt class="text-muted small font-weight-bold">Visa</dt>
+          <dd>type</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="card border-0">
+      <div class="card-header border-0">
+        Contact Details
+      </div>
+      <div class="card-body">
+        <dl>
+          <dt class="text-muted small font-weight-bold">email</dt>
+          <dd>king@ucsd.edu</dd>
+          <dt class="text-muted small font-weight-bold">Phone</dt>
+          <dd>858-444-4444</dd>
+          <dt class="text-muted small font-weight-bold">Address</dt>
+          <dd>123 Gilman Dr.
+            <br> La Jolla, CA 92037</dd>
+          <dt class="text-muted small font-weight-bold">Housing Phone</dt>
+          <dd>858-444-4444</dd>
+        </dl>
+      </div>
+    </div>
+    <!-- <div class="profile-tabs">
+      <tabset type="pills">
+      <tab heading="Conversations" id="tab1">
+        <div class="py-2 px-3">
+          <p>load Convos component</p>
+          <h4>All Conversations</h4>
+        </div>
+      </tab>
+      <tab heading="Transcript">
+        <div class="tab-content py-2 px-3 d-flex">
+          <h4>Transcript</h4> <button class="btn btn-sm btn-primary ml-auto">snap to detail pane</button>
+
+        </div>
+      </tab>
+      <tab heading="Counseling Sheet">
+        sheet
+      </tab>
+      <tab heading="Schedule">
+        schedule
+      </tab>
+    </tabset>
+    </div> -->
+  </div>
+  <div class="column column-detail border-left">
+    <div class="p-3 bg-light">
+      <h4 class="m-0">All Conversations</h4>
+    </div>
+  </div>
+</div>

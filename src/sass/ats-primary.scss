@@ -1,0 +1,239 @@
+@import '_bootstrap-custom';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+.main-container {
+  margin-top: 2rem;
+}
+
+.btn-danger {
+  color: #fff;
+}
+
+.btn, .nav-link, .close:not(:disabled):not(.disabled), button {
+	cursor:pointer;
+}
+
+.drawer {
+  box-sizing: border-box;
+  display: block;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: auto;
+  background-color: #f8f8f8;
+  color: #333333;
+  width: 50vw;
+  margin-right: -50vw;
+  transition: margin 400ms;
+  min-height: 1px;
+  border-right: none;
+  border-left: 1px solid #dfdfdf;
+  -webkit-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.05);
+  overflow-x: hidden;
+  z-index: 1035;
+}
+
+@media screen and (max-width: 768px) {
+ .drawer {
+    width: 85vw;
+    margin-right: -85vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+ .drawer {
+    width: 35vw;
+    margin-right: -35vw;
+  }
+}
+
+.drawer.is-open {
+  margin-right: 0;
+}
+
+.drawer-contents,
+.drawer-heading,
+.drawer-body,
+.drawer-nav,
+.drawer-footer,
+.drawer ul,
+.drawer li {
+  display: inherit;
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+.drawer-inside {
+  position: absolute;
+}
+.drawer-controls {
+  float: right;
+  margin-right: -16.66666667%;
+  padding: 10px;
+  height: 100%;
+  position: relative;
+  width: 16.66666667%;
+  z-index: 500;
+}
+.drawer-contents {
+  background-color: #f8f8f8;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.drawer-right .drawer-controls {
+  float: left;
+  margin-left: -16.66666667%;
+  margin-right: 0;
+}
+.drawer-heading {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 10px 15px;
+  color: inherit;
+}
+.drawer-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.drawer-body,
+.drawer-nav {
+  padding: 10px 15px;
+}
+.drawer-nav,
+.drawer-fullnav {
+  padding: 10px 15px;
+  margin-bottom: 0;
+  list-style: none;
+}
+.drawer-nav li,
+.drawer-fullnav li {
+  position: relative;
+  margin-bottom: 5px;
+}
+.drawer-nav li a,
+.drawer-fullnav li a {
+  color: #777;
+  border-radius: 4px;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.drawer-nav li.active a,
+.drawer-fullnav li.active a,
+.drawer-nav li a:hover,
+.drawer-fullnav li a:hover,
+.drawer-nav li a:focus,
+.drawer-fullnav li a:focus {
+  color: #515151;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+.drawer-fullnav {
+  color: #fff;
+  padding: 0;
+}
+.drawer-fullnav li {
+  margin-bottom: 0;
+}
+.drawer-fullnav li a {
+  border-radius: 0;
+}
+.drawer-footer {
+  padding: 10px 15px;
+  background-color: #fff;
+  border-top: 1px solid #dfdfdf;
+  margin-top: 1em;
+  font-size: .8rem;
+  color: #999;
+}
+.drawer-footer.locked {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.circlelg {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 48px;
+    padding: 8px;
+    font-size: 28px;
+    position: relative;
+    line-height: 1em;
+}
+
+.circlelg .height_fix {
+    margin-top: 100%;
+}
+
+.circlelg .content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: -14px; /* Note, this must be half the font size */
+}
+
+.circle {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 40px;
+    padding: 6px;
+    font-size: 22px;
+    position: relative;
+    line-height: 1em;
+}
+
+.circle .height_fix {
+    margin-top: 100%;
+}
+
+.circle .content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: -11px; /* Note, this must be half the font size */
+}
+
+.circlesm {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 32px;
+    padding: 6px;
+    font-size: 20px;
+    position: relative;
+    line-height: 1em;
+}
+
+.circlesm .height_fix {
+    margin-top: 100%;
+}
+
+.circlesm .content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: -10px; /* Note, this must be half the font size */
+}
+a.circlesm {
+    font-size: 16px;
+}
