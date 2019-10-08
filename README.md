@@ -1,11 +1,9 @@
-# portfolio
+# portfolio -
 created oct 7 2019
 
-created from base app
+created from mocha three
 
-added layouts, routing and beginning styles for VAC prototypes
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
+updated to angular 8.2 and cli 8.3
 
 ## Development server
 

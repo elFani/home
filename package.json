@@ -11,7 +11,8 @@
     "e2e": "ng e2e",
     "initialize": "npm install && npm run build-sass",
     "build-sass": "node-sass --output-style compressed -o src/assets src/sass",
-    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
+    "git-hub-pages": "ng build --prod --output-path docs --base-href /home/"
   },
   "private": true,
   "dependencies": {
