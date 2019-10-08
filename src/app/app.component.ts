@@ -1,22 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from './data.service';
-
 
 @Component({
-  selector: 'app-root',
+  selector: 'ats-root',
   templateUrl: './app.component.html'
 })
-export class AppComponent {
-  apptitle = 'Welcome';
-  username = 'Albert Oregano';
+export class AppComponent implements OnInit {
+  apptitle = 'Welcome to el folio';
+  username = 'youser name';
 
-  constructor(private dataService:DataService){}
-
-  someProperty:string='';
-
-  ngOnInit(){
-    console.log(this.dataService.userTypes);
-
-    this.someProperty = this.dataService.myData();
+  ngOnInit() {
   }
+
+
 }

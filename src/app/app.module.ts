@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
@@ -18,10 +18,7 @@ import { SidebartoggleDirective } from './side-bar/sidebartoggle.directive';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 import { appRoutes } from './routes';
-import { LayoutOneComponent } from './layout-one/layout-one.component';
-import { LayoutTwoComponent } from './layout-two/layout-two.component';
-
-import { DataService } from './data.service';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -30,12 +27,11 @@ import { DataService } from './data.service';
     SideBarComponent,
     SidebartoggleDirective,
     NavBarComponent,
-    LayoutOneComponent,
-    LayoutTwoComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes),
     AngularFontAwesomeModule,
     BsDropdownModule.forRoot(),
@@ -43,7 +39,7 @@ import { DataService } from './data.service';
     AlertModule.forRoot(),
     TabsModule.forRoot()
   ],
-  providers: [SideBarService, DataService],
+  providers: [SideBarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

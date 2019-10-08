@@ -45,7 +45,7 @@
 
 .context-menu-details a.list-group-item.list-group-item-action:hover {
 	background-color: #ccc;
-	color: #000;
+	color: #000; 
 }
 
 .border-right {
@@ -57,9 +57,16 @@
 	/*margin-bottom: 1rem;*/
 }
 
+.profile-name {
+
+}
+
+.profile-img { 
+}
+
 .profile-tabs ul.nav.nav-pills {
 	background-color: #f8f9fa;
-	border-bottom: 1px solid rgba(0,0,0,0.125);
+	border-bottom: 1px solid rgba(0,0,0,0.125); 
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
