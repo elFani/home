@@ -7,7 +7,7 @@ import { DataService } from './data.service';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  apptitle = 'glitch 1.0';
+  apptitle = 'Welcome';
   username = 'Albert Oregano';
 
   constructor(private dataService:DataService){}
