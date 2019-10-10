@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
-  apptitle = 'Welcome to el folio';
+  apptitle = 'Welcome to netlify';
   username = 'Visitor';
 
   ngOnInit() {
