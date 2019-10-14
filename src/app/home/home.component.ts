@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class HomeComponent implements OnInit {
+  kingTriton: boolean = true;
+  ethylBromide: boolean = true;
 
   constructor() { }
 

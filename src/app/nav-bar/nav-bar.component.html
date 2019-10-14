@@ -4,13 +4,13 @@
   </button>
   <a class="navbar-brand order-2 ml-2 ml-md-0 mr-auto" href="#">{{apptitle}}</a>
   <!-- <button class="btn btn-outline-info ml-md-3" type="button" atsSidebartoggle>{{username}}</button> -->
-  
+
   <div class="collapse navbar-collapse order-4" [collapse]="mobileNavCollapse">
     <ul class="navbar-nav ml-auto mt-2 mt-md-0">
       <li class="nav-item">
          <a class="nav-link" [routerLink]="['/layout-two']" routerLinkActive="active">Layout Two<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="#">Link-2</a>
       </li>
       <li class="nav-item">
@@ -28,8 +28,8 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">One more separated link</a>
         </div>
-      </li>
+      </li> -->
     </ul>
   </div>
-  <button class="btn btn-outline-info ml-md-3 order-3 order-md-4" type="button" atsSidebartoggle><fa class="mr-1" name="ellipsis-v" size="lg"></fa>{{username}}</button>
+  <button class="btn btn-outline-info ml-md-3 order-3 order-md-4" type="button" atsSidebartoggle><fa class="mr-1" name="ellipsis-v" size="lg"></fa> {{username}}</button>
 </nav>

@@ -19,6 +19,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 import { appRoutes } from './routes';
 import { HomeComponent } from './home/home.component';
+import { LayoutTwoComponent } from './layout-two/layout-two.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HomeComponent } from './home/home.component';
     SidebartoggleDirective,
     NavBarComponent,
     HomeComponent,
+    LayoutTwoComponent,
   ],
   imports: [
     BrowserModule,
