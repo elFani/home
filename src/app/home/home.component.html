@@ -27,8 +27,8 @@
         <a class="list-group-item list-group-item-action">Schedule</a>
         <a class="list-group-item list-group-item-action">Time to Degree</a>
       </div>
-      <a class="list-group-item list-group-item-action pl-2">Project 3</a>
-      <a class="list-group-item list-group-item-action pl-2">Project 4</a>
+      <a [routerLink]="['/proj']" class="list-group-item list-group-item-action pl-2">Project 3</a>
+      <a [routerLink]="['/proj2']" class="list-group-item list-group-item-action pl-2">Project 4</a>
 
     </div>
   </div>
@@ -37,6 +37,7 @@
       <h4 class="m-0">All Conversations</h4>
     </div>
     <button class="btn btn-primary">button</button>
+    <router-outlet></router-outlet>
   </div>
   <div class="column column-detail border-left">
     <div class="profile-head bg-light px-3 py-2">
