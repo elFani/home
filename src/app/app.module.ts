@@ -20,6 +20,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { appRoutes } from './routes';
 import { HomeComponent } from './home/home.component';
 import { LayoutTwoComponent } from './layout-two/layout-two.component';
+import { A11yComponent } from './a11y/a11y.component';
+import { PhotoWorkflowComponent } from './photo-workflow/photo-workflow.component';
+import { PatternLibraryComponent } from './pattern-library/pattern-library.component';
 
 
 @NgModule({
@@ -30,6 +33,9 @@ import { LayoutTwoComponent } from './layout-two/layout-two.component';
     NavBarComponent,
     HomeComponent,
     LayoutTwoComponent,
+    A11yComponent,
+    PhotoWorkflowComponent,
+    PatternLibraryComponent,
   ],
   imports: [
     BrowserModule,
