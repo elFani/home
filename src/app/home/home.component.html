@@ -5,12 +5,38 @@
       <input type="text" placeholder="search" class="form-control">
     </div>
     <div class="list-group list-group-flush list-group-context-menu">
-      <a [routerLink]="['/a11y']" class="list-group-item list-group-item-action pl-2">a11y</a>
-      <a [routerLink]="['/photo-work']" class="list-group-item list-group-item-action pl-2">Photo Workflow</a>
-      <a [routerLink]="['/pattern-library']" class="list-group-item list-group-item-action pl-2">Pattern Library</a>
+      <a [routerLink]="['/']" (click)="showAbout()" class="list-group-item list-group-item-action pl-2">About the app</a>
+      <a [routerLink]="['/a11y']" (click)="hideAbout()" class="list-group-item list-group-item-action pl-2">a11y</a>
+      <a [routerLink]="['/photo-work']" (click)="hideAbout()" class="list-group-item list-group-item-action pl-2">Photo Workflow</a>
+      <a [routerLink]="['/pattern-library']" (click)="hideAbout()" class="list-group-item list-group-item-action pl-2">Pattern Library</a>
     </div>
   </div>
   <div class="column column-main">
+    <div class="about-section p-5" *ngIf=about>
+      <h1>Phillip</h1>
+      <div class="hello-flex">
+        <div>hello</div>
+        <div>buen día</div>
+        <div>bom dia</div>
+        <div>ciao</div>
+        <div>안영</div>
+      </div>
+      <p>Welcome, please have a look around</p>
+      <div class="card">
+        <div class="card-header">
+          A little bit about this place...
+        </div>
+        <div class="card-body">
+          <dl>
+            <dt>Angular</dt>
+            <dd>8.2.9</dd>
+            <dt>Angular CLI</dt>
+            <dd>8.3.8</dd>
+          </dl>
+          Built with Angular 8.2.9 an
+        </div>
+      </div>
+    </div>
     <router-outlet></router-outlet>
   </div>
   <div class="column column-detail border-left">
