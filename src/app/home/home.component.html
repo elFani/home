@@ -13,7 +13,7 @@
   </div>
   <div class="column column-main">
     <div class="about-section p-5" *ngIf=about>
-      <h1>Phillip</h1>
+      <p class="lead">Welcome, please have a look around</p>
       <div class="hello-flex">
         <div>hello</div>
         <div>buen día</div>
@@ -21,26 +21,34 @@
         <div>ciao</div>
         <div>안영</div>
       </div>
-      <p>Welcome, please have a look around</p>
       <div class="card">
         <div class="card-header">
           A little bit about this place...
         </div>
         <div class="card-body">
-          <dl>
+          <p>This is a basic example of an application UI masquerading as a portfolio 👻</p>
+          <p>The project code is housed on <a href="https://github.com/">Github</a> and deployed via <a href="https://www.netlify.com/">Netlify</a>.</p>
+          <h4>more details</h4>
+          <dl class="pf-list">
             <dt>Angular</dt>
             <dd>8.2.9</dd>
             <dt>Angular CLI</dt>
             <dd>8.3.8</dd>
+            <dt>Github repo</dt>
+            <dd><a href="https://github.com/elFani/home">https://github.com/elFani/home</a></dd>
+            <dt>Netlify</dt>
+            <dd><a href="https://www.netlify.com/products/">about Netlify</a></dd>
+            <dt>CSS Dev/Build</dt>
+            <dd>node-sass and node-mon used to watch Sass and compile into CSS</dd>
           </dl>
-          Built with Angular 8.2.9 an
         </div>
       </div>
     </div>
     <router-outlet></router-outlet>
   </div>
   <div class="column column-detail border-left">
-    <div class="profile-head bg-light px-3 py-2">
+    <img class="detail-head-img" src="https:placehold.it/600x250" alt="">
+    <div class="profile-head bg-light p-5">
       <div class="d-flex mb-2">
         <!-- <div class="mr-2">
               <img src="https://placehold.it/50x50" alt="name" class="rounded">
