@@ -1,8 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AboutAppComponent } from '../../components/about-app/about-app.component';
+import { A11yComponent } from '../../components/a11y/a11y.component';
+import { PhotoWorkflowComponent } from '../../components/photo-workflow/photo-workflow.component';
+import { PatternLibraryComponent } from '../../components/pattern-library/pattern-library.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: AboutAppComponent },
+  { path: 'osd-sp', component: A11yComponent },
+  { path: 'photo-work', component: PhotoWorkflowComponent },
+  { path: 'pattern-library', component: PatternLibraryComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -17,7 +17,7 @@ import { SideBarService } from './side-bar/side-bar.service';
 import { SidebartoggleDirective } from './side-bar/sidebartoggle.directive';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
-import { appRoutes } from './routes';
+import { appRoutes } from './routing-module';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
