@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayoutTwoComponent } from './layout-two.component';
+import { AboutAppComponent } from './about-app.component';
 
-describe('LayoutTwoComponent', () => {
-  let component: LayoutTwoComponent;
-  let fixture: ComponentFixture<LayoutTwoComponent>;
+describe('AboutAppComponent', () => {
+  let component: AboutAppComponent;
+  let fixture: ComponentFixture<AboutAppComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LayoutTwoComponent ]
+      declarations: [ AboutAppComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LayoutTwoComponent);
+    fixture = TestBed.createComponent(AboutAppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

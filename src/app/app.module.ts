@@ -19,11 +19,6 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 import { appRoutes } from './routes';
 import { HomeComponent } from './home/home.component';
-import { LayoutTwoComponent } from './layout-two/layout-two.component';
-import { A11yComponent } from './a11y/a11y.component';
-import { PhotoWorkflowComponent } from './photo-workflow/photo-workflow.component';
-import { PatternLibraryComponent } from './pattern-library/pattern-library.component';
-
 
 @NgModule({
   declarations: [
@@ -31,11 +26,7 @@ import { PatternLibraryComponent } from './pattern-library/pattern-library.compo
     SideBarComponent,
     SidebartoggleDirective,
     NavBarComponent,
-    HomeComponent,
-    LayoutTwoComponent,
-    A11yComponent,
-    PhotoWorkflowComponent,
-    PatternLibraryComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
