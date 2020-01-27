@@ -5,10 +5,11 @@
       <input type="text" placeholder="search" class="form-control">
     </div> -->
     <div class="list-group list-group-flush list-group-context-menu">
-      <a [routerLink]="['/']" (click)="showAbout()" class="list-group-item list-group-item-action pl-2">About the app</a>
-      <a [routerLink]="['/a11y']" (click)="hideAbout()" class="list-group-item list-group-item-action pl-2">OSD Student Portal</a>
-      <a [routerLink]="['/photo-work']" (click)="hideAbout()" class="list-group-item list-group-item-action pl-2">Photo Workflow</a>
-      <a [routerLink]="['/pattern-library']" (click)="hideAbout()" class="list-group-item list-group-item-action pl-2">Pattern Library</a>
+      <a [routerLink]="['/']" (click)="showAbout()" class="list-group-item list-group-item-action pl-3">About the app</a>
+      <a [routerLink]="['/a11y']" (click)="hideAbout()" class="list-group-item list-group-item-action pl-3">OSD Student Portal</a>
+      <a [routerLink]="['/photo-work']" (click)="hideAbout()" class="list-group-item list-group-item-action pl-3">Photo Workflow</a>
+      <a [routerLink]="['/pattern-library']" (click)="hideAbout()" class="list-group-item list-group-item-action pl-3">Pattern Library</a>
+      <!-- <a [routerLink]="['/pattern-library']" (click)="hideAbout()" class="list-group-item list-group-item-action pl-3">Compare Colleges</a> -->
     </div>
   </div>
   <div class="column column-main">
@@ -47,26 +48,18 @@
     <router-outlet></router-outlet>
   </div>
   <div class="column column-detail border-left">
-    <img class="detail-head-img" src="https:placehold.it/600x250" alt="">
-    <div class="profile-head bg-light p-5">
+    <div class="profile-head bg-light p-3">
       <div class="d-flex mb-2">
-        <!-- <div class="mr-2">
-              <img src="https://placehold.it/50x50" alt="name" class="rounded">
-            </div> -->
         <div class="align-self-end">
-          <h2 class="profile-name mr-2 mb-0">Phillip Faniola</h2>
+          <h2 class="profile-name mr-2">Phillip Faniola</h2>
         </div>
       </div>
-      <div class="d-flex">
-        <div class="major pr-2 small">
-          <div class="text-muted font-weight-bold">Major</div>
-          <div>Oceanography (CODE)</div>
-          <div>Marine Biology (CODE)</div>
-        </div>
-        <div class="minor px-2 small">
-          <div class="text-muted font-weight-bold">Minor</div>
-          <div>Basket Weaving (CODE)</div>
-        </div>
+      <div>
+        <p class="pf-label font-weight-bold mb-1">about</p>
+        <p>Interested in what happens when art meets the web.</p>
+        <p>Experience (10+ years) in UX design, interface design, and front-end
+        development. Currently UX Designer and front-end dev at UC San Diego after managing U.S. Soccer's online presence and
+        co-creating mobile app.</p>
       </div>
     </div>
     <div class="card border-0 rounded-0">
@@ -74,11 +67,13 @@
         Contact Details
       </div>
       <div class="card-body">
-        <dl>
-          <dt class="text-muted small font-weight-bold">email</dt>
-          <dd>address</dd>
-          <dt class="text-muted small font-weight-bold">linkedin</dt>
-          <dd>555-555-4444</dd>
+        <dl class="pf-list">
+          <dt>phone</dt>
+          <dd>312-203-3485</dd>
+          <dt>email</dt>
+          <dd><a href="mailto:pfaniola@gmail.com?Subject=Hello%20via%20your%20portfolio">send email</a></dd>
+          <dt>linkedin</dt>
+          <dd><a href="www.linkedin.com/in/phillip-faniola-35011a57">view profile</a></dd>
         </dl>
       </div>
     </div>
@@ -87,17 +82,11 @@
         Additional Details
       </div>
       <div class="card-body">
-        <dl>
-          <dt class="text-muted small font-weight-bold">Apply Type</dt>
-          <dd>NFRS</dd>
-          <dt class="text-muted small font-weight-bold">Enter Quarter</dt>
-          <dd>FA64</dd>
-          <dt class="text-muted small font-weight-bold">College</dt>
-          <dd>Revelle</dd>
-          <dt class="text-muted small font-weight-bold">ELWR</dt>
-          <dd>NO (icon)</dd>
-          <dt class="text-muted small font-weight-bold">Visa</dt>
-          <dd>type</dd>
+        <dl class="pf-list">
+          <dt>Spanish language</dt>
+          <dd>fluent</dd>
+          <dt>Portuguese language</dt>
+          <dd>working competency</dd>
         </dl>
       </div>
     </div>
