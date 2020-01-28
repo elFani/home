@@ -1,22 +1,20 @@
 <div class="grid-3-column">
-  <div class="column column-context bg-dark text-white py-3">
-    <!-- <p>{{layoutTwoProperty}}</p> -->
-    <!-- <div class="form-group px-2">
-      <input type="text" placeholder="search" class="form-control">
-    </div> -->
-    <div class="list-group list-group-flush list-group-context-menu">
-      <a routerLink="/" class="list-group-item list-group-item-action pl-3">About the app</a>
+  <div class="column column-context bg-dark pt-5">
+
+    <h3 class="text-light px-3">PROJECTS</h3>
+    <div class="list-group list-group-flush list-group-context-menu text-white">
+      <!-- <a routerLink="/" class="list-group-item list-group-item-action pl-3">About the app</a> -->
       <a routerLink="/osd-sp" class="list-group-item list-group-item-action pl-3">OSD Student Portal</a>
       <a routerLink="/pattern-library" class="list-group-item list-group-item-action pl-3">Pattern Library</a>
       <a routerLink="/photo-work" class="list-group-item list-group-item-action pl-3">Photo Workflow</a>
-      <!-- <a [routerLink]="['/pattern-library']" (click)="hideAbout()" class="list-group-item list-group-item-action pl-3">Compare Colleges</a> -->
+      <a routerLink="/compare-colleges" class="list-group-item list-group-item-action pl-3">Compare Colleges</a>
     </div>
   </div>
   <div class="column column-main">
     <router-outlet></router-outlet>
   </div>
   <div class="column column-detail border-left">
-    <div class="profile-head bg-light p-3">
+    <div class="profile-head bg-light p-3 pt-5">
       <div class="d-flex mb-2">
         <div class="align-self-end">
           <h2 class="profile-name mr-2">Phillip Faniola</h2>
