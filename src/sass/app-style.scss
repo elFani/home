@@ -17,6 +17,8 @@ body {
     height: calc(100vh - 56px);
 }
 
+
+
 .grid-3-column.layout-two {
 	grid-template-columns: 1fr 2fr 4fr;
 }
@@ -140,4 +142,10 @@ dd {
 
 .proj-text-block {
 	margin: 2.75em 0;
+}
+
+@media (max-width:767px) {
+	.grid-3-column {
+		display: initial;
+	}
 }
