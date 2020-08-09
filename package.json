@@ -14,7 +14,8 @@
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
     "git-hub-pages": "ng build --prod --output-path docs --base-href /home/",
     "scully": "scully",
-    "scully:serve": "scully serve"
+    "scully:serve": "scully serve",
+    "build-run-serve-it": "ng build && npm run scully -- --scanRoutes && npm run scully serve"
   },
   "private": true,
   "dependencies": {
