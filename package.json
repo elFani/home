@@ -12,7 +12,9 @@
     "initialize": "npm install && npm run build-sass",
     "build-sass": "node-sass --output-style compressed -o src/assets src/sass",
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
-    "git-hub-pages": "ng build --prod --output-path docs --base-href /home/"
+    "git-hub-pages": "ng build --prod --output-path docs --base-href /home/",
+    "scully": "scully",
+    "scully:serve": "scully serve"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +26,9 @@
     "@angular/platform-browser": "8.2.9",
     "@angular/platform-browser-dynamic": "8.2.9",
     "@angular/router": "8.2.9",
+    "@scullyio/init": "^1.0.0-beta.0",
+    "@scullyio/ng-lib": "^1.0.0-beta.0",
+    "@scullyio/scully": "^1.0.0-beta.0",
     "angular-cli-ghpages": "^0.6.0",
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^4.3.1",
